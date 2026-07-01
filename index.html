@@ -35,7 +35,76 @@
                 <p class="ayuda-texto"> debe tener almenos 6 caracteristicas</p>
             </div>
 
+
+        
+            <div class="grupo-campo">
+          
+            <label for="grado">en que grado estas</label>
+
+            <select  id="grado" name="grado" required>
             
+
+            <option value="seleclecciona"></option>
+            <option value="6">6to grado</option>
+            <option value="7">7mo grado</option>
+            <option value="8">8 vo grado</option>
+            <option value="9">9 no </option>
+            
+            </select>
+
+            </div>
+
+            <div class="grupo-campo">
+                <label >tienes experiencia en la robotica</label>
+                <div class="opcion-fila">
+                    <div class="opcion-individual">
+                        <input type="radio" id ="exp-si" name="experiencia" value="si">
+                        <label for="exp-si">si</label>
+                    </div>
+                    <div class="opcion-individual">
+                        <input type="radio" id="exp-no" name="experiencia" value="no">
+                        <label for="exp-no">no</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grupo-campo">
+
+                <label>que quieres aprender (escoje 1 o varias opciones )</label>
+
+                <div class="opciones-fila">
+                    <div class="opcion-individual">
+                        <input type="checkbox" id="prog" name="intereses" value="programacion">
+                        <label for="prog">programacion</label>
+                        
+                    </div>
+
+                    <div class="opcion individual">
+                    <input type="checkbox"id=diseno name="intereses" value="electronica">
+                    <label for="elec">electronica/label>
+
+                    </div>
+                    <div class="opcion individual">
+                    <input type="checkbox"id= diseno name="intereses" value="diseno">
+                    <label for="diseno">diseño 3d </label>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="grupo-campo">
+            <label for="comentario">cuentanos algo sobre ti</label>
+            <textarea id="comentario "name=comentario></textarea>
+
+            </div>
+            <button type="submit" class="button-enviar">enviar inscripcion</button>
+
+
+
+            </div>
 
         </form>
 
