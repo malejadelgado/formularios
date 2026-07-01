@@ -1,0 +1,142 @@
+/* ============================================
+       1. ESTILOS GENERALES DE LA PÁGINA
+       ============================================ */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Para que el padding no rompa los tamaños */
+    }
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #eef2f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    /* ============================================
+       2. EL CONTENEDOR DEL FORMULARIO (la "tarjeta")
+       ============================================ */
+    .contenedor-formulario {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 480px;
+        padding: 35px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contenedor-formulario h1 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    .contenedor-formulario p.subtitulo {
+        text-align: center;
+        color: #7f8c8d;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    /* ============================================
+       3. GRUPOS DE CAMPOS (etiqueta + input juntos)
+       ============================================ */
+    .grupo-campo {
+        margin-bottom: 18px;
+    }
+
+    .grupo-campo label {
+        display: block; /* La etiqueta ocupa toda la línea, arriba del input */
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #34495e;
+        font-size: 14px;
+    }
+
+    /* Estilo para inputs de texto, email, password, select y textarea */
+    .grupo-campo input[type="text"],
+    .grupo-campo input[type="email"],
+    .grupo-campo input[type="password"],
+    .grupo-campo select,
+    .grupo-campo textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 2px solid #dcdfe3;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: inherit;
+        transition: border-color 0.3s ease;
+    }
+
+    /* Efecto cuando el estudiante hace clic en el campo */
+    .grupo-campo input:focus,
+    .grupo-campo select:focus,
+    .grupo-campo textarea:focus {
+        outline: none;
+        border-color: #3498db;
+        background-color: #f7fbff;
+    }
+
+    .grupo-campo textarea {
+        resize: vertical; /* Solo se puede estirar hacia abajo */
+        min-height: 80px;
+    }
+
+    /* ============================================
+       4. RADIO BUTTONS Y CHECKBOXES
+       ============================================ */
+    .opciones-fila {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .opcion-individual {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        color: #34495e;
+    }
+
+    .opcion-individual input[type="radio"],
+    .opcion-individual input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        accent-color: #3498db; /* Color moderno para el check/radio */
+    }
+
+    /* ============================================
+       5. BOTÓN DE ENVIAR
+       ============================================ */
+    .boton-enviar {
+        width: 100%;
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .boton-enviar:hover {
+        background-color: #2980b9;
+    }
+
+    /* Mensaje de texto pequeño debajo de algunos campos */
+    .ayuda-texto {
+        font-size: 12px;
+        color: #95a5a6;
+        margin-top: 4px;
+
+    }
